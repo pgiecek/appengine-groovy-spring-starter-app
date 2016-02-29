@@ -35,8 +35,10 @@ To stop the development web server, issue the below command from the project's r
 
     $ ./gradlew appengineStop
 
-To upload application files, specify the Google account email and run the below command from the project's root.
+To upload application files, run the below command from the project's root.
 
     $ ./gradlew appengineUpdate
+
+The first time you issue the given command, you have to go through the OAuth2 flow.
 
 For more details, visit Gradle App Engine plugin [documentation](https://github.com/GoogleCloudPlatform/gradle-appengine-plugin).
