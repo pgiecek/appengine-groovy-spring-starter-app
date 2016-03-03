@@ -1,2 +1,1 @@
-rootProject.name = 'appengine-groovy-spring-starter-app'
-
+include ':application', ':module-1'

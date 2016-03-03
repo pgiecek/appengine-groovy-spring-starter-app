@@ -1,43 +1,17 @@
-group 'com.pgiecek.appengine'
-version '0.1.0-SNAPSHOT'
+allprojects {
 
-apply plugin: 'groovy'
-apply plugin: 'war'
-apply plugin: 'appengine'
+    group 'com.pgiecek.appengine'
+    version '0.1.0-SNAPSHOT'
+}
 
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
+subprojects {
 
-buildscript {
+    apply plugin: 'groovy'
+
+    sourceCompatibility = 1.7
+    targetCompatibility = 1.7
+
     repositories {
         mavenCentral()
-    }
-
-    dependencies {
-        classpath 'com.google.appengine:gradle-appengine-plugin:1.9.32'
-    }
-}
-
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    appengineSdk 'com.google.appengine:appengine-java-sdk:1.9.32'
-    compile 'com.google.appengine:appengine-api-1.0-sdk:1.9.32'
-    compile 'org.codehaus.groovy:groovy-all:2.4.6'
-    providedCompile 'javax.servlet:servlet-api:2.5'
-}
-
-appengine {
-    httpPort = 8888
-    downloadSdk = true
-
-    appcfg {
-        oauth2 = true
-        // After a successful authorization, the access token is stored so that you are not prompted again for subsequent attempts.
-        // The token can be deleted by manually removing .appcfg_oauth2_tokens_java found in the user's home directory.
-        // You can also specify the noCookies = true option to prevent the token from being stored at all.
-        noCookies = false
     }
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+    <!--
+        While every appengine-web.xml file must contain the <application> tag, the name you supply there is ignored.
+        The name of the application is taken from the <application> tag in the appengine-application.xml file.
+    -->
+    <application>gae-groovy-spring-starter-app</application>
+    <version>v1</version>
+    <!--
+        To define the default module, explicitly include the <module>default</module> param or leave it out of the file.
+    -->
+    <!--<module>default</module>-->
+    <threadsafe>true</threadsafe>
+
+    <system-properties>
+        <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+    </system-properties>
+</appengine-web-app>

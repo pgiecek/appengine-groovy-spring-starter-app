@@ -1,0 +1,34 @@
+apply plugin: 'ear'
+apply plugin: 'appengine'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.google.appengine:gradle-appengine-plugin:1.9.32'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    appengineSdk 'com.google.appengine:appengine-java-sdk:1.9.32'
+    deploy project(path: ':module-1', configuration: 'archives')
+}
+
+appengine {
+    httpPort = 8888
+    downloadSdk = true
+
+    appcfg {
+        oauth2 = true
+        // After a successful authorization, the access token is stored so that you are not prompted again for subsequent attempts.
+        // The token can be deleted by manually removing .appcfg_oauth2_tokens_java found in the user's home directory.
+        // You can also specify the noCookies = true option to prevent the token from being stored at all.
+        noCookies = false
+    }
+}

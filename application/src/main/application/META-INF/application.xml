@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://java.sun.com/xml/ns/javaee"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_6.xsd"
+             version="6">
+
+    <display-name>App Engine/Groovy/Spring Starter App</display-name>
+    <!--
+        It is recommended the first module is the default module, so that the first deployment will work
+        (and create the mandatory default module) before deploying another module.
+    -->
+    <module>
+        <web>
+            <web-uri>module-1-0.1.0-SNAPSHOT</web-uri>
+            <!--
+                App Engine will ignore the <context-root> elements, so you can put here whatever want.
+            -->
+            <context-root>/module-1</context-root>
+        </web>
+    </module>
+    <!--
+
+        Other modules follow...
+
+    <module>
+        <web>
+            <web-uri>module-2</web-uri>
+            <context-root>/module-2</context-root>
+        </web>
+    </module>
+    -->
+    <library-directory>lib</library-directory>
+</application>

@@ -17,7 +17,7 @@ you can use your current App Engine SDK installation as follows.
 
 Specify the app's registered application ID and the version identifier in the following configuration file.
 
-    src/main/webapp/WEB-INF/appengine-web.xml
+    application/src/main/application/META-INF/appengine-application.xml
 
 ## Usage
 
