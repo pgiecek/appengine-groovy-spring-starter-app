@@ -29,6 +29,8 @@ To start the development web server, issue the below command from the project's 
 
     $ ./gradlew appengineRun
 
+To test the app, visit the URL [http://localhost:8888/greeting](http://localhost:8888/greeting).
+
 To access the development console, visit the URL [http://localhost:8888/_ah/admin](http://localhost:8888/_ah/admin).
 
 To stop the development web server, issue the below command from the project's root.
