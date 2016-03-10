@@ -11,8 +11,17 @@
     -->
     <!--<module>default</module>-->
     <threadsafe>true</threadsafe>
+    <instance-class>F1</instance-class>
+    <automatic-scaling>
+        <min-idle-instances>automatic</min-idle-instances>
+        <max-idle-instances>automatic</max-idle-instances>
+        <min-pending-latency>automatic</min-pending-latency>
+        <max-pending-latency>automatic</max-pending-latency>
+        <max-concurrent-requests>50</max-concurrent-requests>
+    </automatic-scaling>
 
     <system-properties>
         <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
     </system-properties>
+
 </appengine-web-app>
