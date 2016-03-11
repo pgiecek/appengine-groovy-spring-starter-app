@@ -1,6 +1,6 @@
 # App Engine/Groovy/Spring Starter App
 
-The App Engine "Hello World" app based Groovy programming language and Spring framework.
+The App Engine "Hello World" app based on Groovy programming language and Spring framework.
 
 ## Requirements
 
