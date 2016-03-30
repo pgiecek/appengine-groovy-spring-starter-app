@@ -7,7 +7,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.google.appengine:gradle-appengine-plugin:1.9.32'
+        classpath 'com.google.appengine:gradle-appengine-plugin:latest.integration'
     }
 }
 
@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-    appengineSdk 'com.google.appengine:appengine-java-sdk:1.9.32'
+    appengineSdk 'com.google.appengine:appengine-java-sdk:latest.release'
     deploy project(path: ':blended', configuration: 'archives')
 }
 

@@ -4,25 +4,7 @@ allprojects {
     version '0.0.1-SNAPSHOT'
 }
 
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'io.spring.gradle:dependency-management-plugin:0.5.4.RELEASE'
-    }
-}
-
-apply plugin: 'io.spring.dependency-management'
-
-dependencyManagement {
-    imports {
-        mavenBom 'io.spring.platform:platform-bom:2.0.3.RELEASE'
-    }
-}
-
 subprojects {
-
     apply plugin: 'groovy'
 
     sourceCompatibility = 1.7
