@@ -1,3 +1,2 @@
-include ':application', ':blended'
-include 'blended'
+include ':application', ':module'
 
