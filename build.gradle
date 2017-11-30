@@ -1,17 +1,20 @@
 allprojects {
 
-    group 'com.pgiecek.appengine'
-    version '0.1.0-SNAPSHOT'
+    group 'tk.eigh'
+    version '0.0.1-SNAPSHOT'
 }
 
 subprojects {
-
     apply plugin: 'groovy'
 
     sourceCompatibility = 1.7
     targetCompatibility = 1.7
 
+    compileGroovy {
+        options.fork = true
+    }
+
     repositories {
-        mavenCentral()
+        jcenter()
     }
 }

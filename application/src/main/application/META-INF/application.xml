@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application xmlns="http://java.sun.com/xml/ns/javaee"
-             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_6.xsd"
-             version="6">
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns="http://java.sun.com/xml/ns/javaee"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+              http://java.sun.com/xml/ns/javaee/application_5.xsd"
+             version="5">
 
     <display-name>App Engine/Groovy/Spring Starter App</display-name>
     <!--
@@ -11,11 +12,11 @@
     -->
     <module>
         <web>
-            <web-uri>module-1-0.1.0-SNAPSHOT</web-uri>
+            <web-uri>module-0.0.1-SNAPSHOT</web-uri>
             <!--
                 App Engine will ignore the <context-root> elements, so you can put here whatever want.
             -->
-            <context-root>/module-1</context-root>
+            <context-root>/module</context-root>
         </web>
     </module>
     <!--
